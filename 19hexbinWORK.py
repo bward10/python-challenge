@@ -76,32 +76,12 @@ w.close()
 
 
 
-# password_mgr = urllib.request.HTTPPasswordMgrWithDefaultRealm()
-# top_level_url = "http://pythonchallenge.com"
-# password_mgr.add_password(None, top_level_url, "butter", "fly")
-# handler = urllib.request.HTTPBasicAuthHandler(password_mgr)
-# opener = urllib.request.build_opener(handler)
 
-# # use the opener to fetch a URL
-# opener.open(url)
-# urllib.request.install_opener(opener)
-# f = urllib.request.urlopen(url)
 
 # text = str(f.read())
 
 # print(text)
 
-
-"""
-auth_handler = urllib.HTTPBasicAuthHandler()
-auth_handler.add_password('pluses and minuses', 'www.pythonchallenge.com', 'butter', 'fly')
-opener = urllib.build_opener(auth_handler)
-urllib.install_opener(opener)
-
-f = urllib.urlopen('http://www.pythonchallenge.com/pc/hex/bin.html')
-data = f.readlines()
-print(data)
-"""
 """
 x = urllib.request.urlopen(url)
 text = str(x.read())
